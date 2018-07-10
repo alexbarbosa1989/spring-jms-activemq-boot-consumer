@@ -1,0 +1,9 @@
+spring:
+  activemq:
+    broker-url: failover://(tcp://salcto-apl371:61616,tcp://salcto-apl372:61616)?randomize=false&timeout=30000&initialReconnectDelay=100&useExponentialBackOff=true
+    user: 'alpha-q'
+    password: '4lph4q@'
+
+queue:
+  boot: prueba.q
+  
