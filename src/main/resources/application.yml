@@ -1,6 +1,6 @@
 spring:
   activemq:
-    broker-url: tcp://localhost:61616
+    broker-url: failover://(tcp://localhost:63616,tcp://localhost:65616)?randomize=false&timeout=30000&initialReconnectDelay=100&useExponentialBackOff=true
     user: 'admin'
     password: 'admin'
 
